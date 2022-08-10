@@ -1,0 +1,92 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright 2014 The Android Open Source Project
+4
+5 Licensed under the Apache License, Version 2.0 (the "License");
+6 you may not use this file except in compliance with the License.
+7 You may obtain a copy of the License at
+8
+9     http://www.apache.org/licenses/LICENSE-2.0
+10
+11 Unless required by applicable law or agreed to in writing, software
+12 distributed under the License is distributed on an "AS IS" BASIS,
+13 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14 See the License for the specific language governing permissions and
+15 limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.example.android.apprestrictionenforcer"
+19    android:versionCode="1"
+20    android:versionName="1.0" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="21"
+23-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml
+24        android:targetSdkVersion="29" />
+24-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml
+25
+26    <application
+26-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:24:5-57:19
+27        android:allowBackup="true"
+27-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:25:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.1.0] /home/parlapelly/.gradle/caches/transforms-2/files-2.1/c527b78844be871c44103f6f45a963fb/core-1.1.0/AndroidManifest.xml:24:18-86
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:26:9-43
+31        android:label="@string/app_name"
+31-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:27:9-41
+32        android:testOnly="true"
+33        android:theme="@style/AppTheme" >
+33-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:28:9-40
+34        <activity
+34-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:31:9-38:20
+35            android:name="com.example.android.apprestrictionenforcer.MainActivity"
+35-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:32:13-41
+36            android:label="@string/app_name" >
+36-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:33:13-45
+37            <intent-filter>
+37-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:34:13-37:29
+38                <action android:name="android.intent.action.MAIN" />
+38-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:35:17-69
+38-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:35:25-66
+39
+40                <category android:name="android.intent.category.LAUNCHER" />
+40-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:36:17-77
+40-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:36:27-74
+41            </intent-filter>
+42        </activity>
+43        <activity
+43-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:40:9-42:48
+44            android:name="com.example.android.apprestrictionenforcer.EnableProfileActivity"
+44-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:41:13-50
+45            android:label="@string/app_name" />
+45-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:42:13-45
+46
+47        <receiver
+47-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:44:9-55:20
+48            android:name="com.example.android.apprestrictionenforcer.EnforcerDeviceAdminReceiver"
+48-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:45:13-56
+49            android:description="@string/app_name"
+49-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:46:13-51
+50            android:label="@string/app_name"
+50-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:47:13-45
+51            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+51-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:48:13-70
+52            <meta-data
+52-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:49:13-51:73
+53                android:name="android.app.device_admin"
+53-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:50:17-56
+54                android:resource="@xml/enforcer_device_admin_receiver" />
+54-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:51:17-71
+55
+56            <intent-filter>
+56-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:52:13-54:29
+57                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+57-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:53:17-81
+57-->/home/parlapelly/AndroidStudioProjects/AppRestrictionEnforcer/Application/src/main/AndroidManifest.xml:53:25-79
+58            </intent-filter>
+59        </receiver>
+60    </application>
+61
+62</manifest>
